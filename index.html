@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">    
+        <link rel="stylesheet" href="src/calendar.css">
+        <link rel="icon" href="src/icon.ico">
+        <link rel="apple-touch-icon" href="option/icon.ico" />            
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script type="text/javascript" src="src/qreki.js"></script>
+        <script type="text/javascript" src="src/calendar.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <title>カレンダー</title>
+    </head>
+    <body style="background-color: #eeeeee;"> 
+        <div class="wrapper">
+            <!-- xxxx年xx月を表示, ボタンクリックで月移動 -->
+            <div id="next-prev-button">
+                <button id="prev" onclick="prev()">‹</button>
+                <div class="header">
+                    <label style="color: black; font-weight: bold; font-size: 26px;" id="sm"></label>&emsp;
+                    <label style="color: black;" id="header"></label>&emsp;
+                </div>         
+                <button id="next" onclick="next()">›</button>
+            </div>        
+            <!-- カレンダー -->
+            <div id="calendar"></div>
+        </div>
+    </body>
+</html>

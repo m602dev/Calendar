@@ -8,14 +8,15 @@
         <link rel="apple-touch-icon" href="option/icon.ico" />            
         <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
         <script type="text/javascript" src="src/calendar.js"></script>
-        <title>Calendar</title>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <title>カレンダー</title>
     </head>
-    <body> 
+    <body style="background-color: #eeeeee;"> 
         <div class="wrapper">
             <div id="next-prev-button">
                 <button id="prev" onclick="prev()">‹</button>
-                <div class="header">
-                    <label style="color: black;" id="header"></label>&emsp;
+                <div class="header" id="header">
+                    <label style="color: black;" id="header"></label>
                 </div>         
                 <button id="next" onclick="next()">›</button>
             </div>        

@@ -28,7 +28,7 @@ input{
     width: 100%;
 }
 .td_cnt{
-    padding-left: 5px;
+    padding-top: 5px;
     font-weight:bold;
     color: black;
     text-decoration: underline;    
@@ -49,7 +49,7 @@ tr:not(.dayOfWeek){
 .dayOfWeek{
     height: 5vh;
 }
-
+tbody{vertical-align: top;}
 th {
     color: #000;
     vertical-align: middle;
@@ -58,6 +58,7 @@ th, td {
     outline: 1px solid #b1afaf;
     color: black;
     text-align: center;
+    padding-top: 10px;
 }
 /*前後月の日付*/
 td.disabled {
